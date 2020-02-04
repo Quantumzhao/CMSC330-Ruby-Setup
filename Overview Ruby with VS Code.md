@@ -61,7 +61,7 @@ It should also download some other dependent extensions, including:
 
 Go to *Extensions*, and search **Ruby**
 
-<img src="ruby_extension.png" alt="ruby_extension" style="zoom:50%;" />
+<img src="image/ruby_extension.png" alt="ruby_extension" style="zoom:50%;" />
 
 >  Actually this extension should be marked with a little star, meaning that it is a recommended extension
 
