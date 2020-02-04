@@ -1,5 +1,3 @@
-# Overview: Ruby with VS Code
-
 This is a tutorial on how to set up a *Ruby* development environment on *VS Code*
 
 This tutorial includes: 
@@ -25,7 +23,7 @@ This tutorial includes:
 
 Personally, I am using *WSL* on *Windows* with the distribution of *Ubuntu*. 
 
-For 
+For Linux, (*Ubuntu* distribution), the steps should be reasonably the same (but of course Linux users don't need to setup *WSL* connection)
 
 Things might be different on *Mac OS*. 
 
@@ -73,11 +71,47 @@ It should also download some other dependent extensions, including:
 
 Open the project folder, and start editing. 
 
-You can find some simple suggestions as shown: 
+We can find some simple suggestions as shown: 
 
 <!--TODO-->
 
 The basic *Ruby* setup tutorial has finished. 
 
 ---
+
+## Advanced *Ruby* Language Support
+
+### Set up *IntelliSense*
+
+In order to utilize the powerful functionality of *IntelliSense*, we need to install another extension, called ***Solargraph***, which can also be found on VS Code extension market. 
+
+<!--TODO-->
+
+After installing this extension, we can find that it is not working as intended. 
+
+This is totally right, because in its description, it says we also need to install its language server to make it work. 
+
+> The mechanism of VS Code *IntelliSense* and the function of VS Code language server is not to be discussed here, but we ca just think the following gem is an essential module. 
+
+Type the following command to install the gem: 
+
+```shell
+sudo gem install solargraph
+```
+
+> In the description page of *Solargraph*, `sudo` command is not necessary, but just in case. 
+
+#### For WSL users
+
+you might get an error
+
+<!--TODO-->
+
+#### For Mac users
+
+You can just ignore this part. 
+
+#### For Linux(*Ubuntu*) users
+
+If you encounter any problem, go to the [Windows](# For WSL users) section to find out possible solutions. 
 
