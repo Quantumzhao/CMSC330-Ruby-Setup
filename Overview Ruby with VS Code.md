@@ -1,3 +1,5 @@
+# Overview: Ruby with VS Code
+
 This is a tutorial on how to set up a *Ruby* development environment on *VS Code*
 
 This tutorial includes: 
@@ -43,19 +45,39 @@ If you manage to set up the configurations, I am not supposed to take any respon
 
 > Although I believe most of you should have done this step, but just in case. 
 
-Go to *Extensions*, and search **Remote - WSL**
+Go to *Extensions*, search **Remote - WSL**, it looks as shown:
+
+<!--TODO-->
 
 And download it. 
 
-It should also download some other dependent extensions, including:
+There should be a little "~>~^<^" like icon at the lower left corner like this:
 
 <!--TODO-->
 
 ## 2. Connect to *WSL*
 
-<!--TODO-->
+1. Click this icon, and select **Remote WSL: New window** (or any other options if you like)
+
+2. After doing this, *VS Code* will start to set up a connection. 
+
+3. When we see this
+
+    <!--TODO-->
+
+    We are done. 
 
 ## 3. Install *Ruby* extension
+
+Before move on to anything further, let's set up a test project to see if the following can work. 
+
+> The following steps are so trivial that most of us should just ignore it. But it is here, just in case. 
+
+1. Click the *Terminal* button on the menu bar and choose *New Terminal*
+2. Create a folder
+3. Open this folder
+
+### The Actual Stuff
 
 Go to *Extensions*, and search **Ruby**
 
@@ -63,19 +85,25 @@ Go to *Extensions*, and search **Ruby**
 
 >  Actually this extension should be marked with a little star, meaning that it is a recommended extension
 
+Make sure you install it on *WSL* (for *WSL* users)
+
 It should also download some other dependent extensions, including:
 
 <!--TODO-->
 
-## Now try it
+## 4. Now try it
 
 Open the project folder, and start editing. 
 
 We can find some simple suggestions as shown: 
 
-<!--TODO-->
+<img src="image/ruby_ext_default.png" alt="image-20200204132252676" style="zoom:50%;" />
 
-The basic *Ruby* setup tutorial has finished. 
+The default suggestions can provide fairly good amount of information, but they are only based on string literals. 
+
+**Can we have better experience? **
+
+Well, the basic *Ruby* setup tutorial has just finished. 
 
 ---
 
@@ -85,9 +113,25 @@ The basic *Ruby* setup tutorial has finished.
 
 In order to utilize the powerful functionality of *IntelliSense*, we need to install another extension, called ***Solargraph***, which can also be found on VS Code extension market. 
 
-<!--TODO-->
+It looks like this:
+
+<img src="image/sg_icon.png" alt="sg_icon" style="zoom:50%;" />
+
+In addition to this, *Solargraph* also provides some very cool utilities such as:
+
+- Inline documentation
+
+    <img src="image/solargraph_usage_example.png" alt="solargraph_usage_example" style="zoom:50%;" />
+
+- Hierarchy view
+
+    <img src="image/solargraph_usage_example1.png" alt="solargraph_usage_example1" style="zoom:50%;" />
+    
+- And some other cool things
 
 After installing this extension, we can find that it is not working as intended. 
+
+> If we see a popup message with a nice little *Install* button, ignore it. 
 
 This is totally right, because in its description, it says we also need to install its language server to make it work. 
 
@@ -114,4 +158,41 @@ You can just ignore this part.
 #### For Linux(*Ubuntu*) users
 
 If you encounter any problem, go to the [Windows](# For WSL users) section to find out possible solutions. 
+
+### We are done
+
+This is the end of advanced *Ruby* language support. 
+
+We can find something like this:
+
+<img src="image/sg_demo.png" alt="sg_demo" style="zoom:50%;" />
+
+### Some noticeable drawbacks
+
+- After the code document is loaded in to the editor, *Solargraph* will not take effect immediately. In fact, there is a little loading icon on the status bar like this:
+
+    <img src="image/solargraph_loading.png" alt="solargraph_loading" style="zoom:50%;" />
+
+> **Important Note: **
+>
+> If the language server cannot be setup, there must be something wrong with your installation steps. Go back and check the [previous steps](### Set up IntelliSense)
+
+> *IntelliSense* is supposed to be working after the language server is successfully set up. 
+>
+> However, it is very common that *Solargraph* will **take even more time** to completely function. 
+>
+> And to be honest, I am not quite clear about the reason. 
+
+- *Solargraph* can fail to parse the code file at anytime, for any length of durations. I don;t know the exact reason neither. But, when it fails to work, 
+
+    1. Check if there is any syntax errors in your code file
+    2. If not, *please just accept it*. It might go live again after **a few moments**. 
+
+    You will still be able to use the suggestions powered by the *Ruby* extension mentioned above. 
+
+# Debugging
+
+As we can see, there is a *Debug* tab near main editor window. 
+
+Ignore it for now. 
 
