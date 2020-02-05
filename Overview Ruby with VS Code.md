@@ -72,7 +72,7 @@ There should be a little "~>~^<^" like icon at the lower left corner like this:
 
 3. When we see this
 
-    ![wsl_active](wsl_active.png)
+    ![wsl_active](image/wsl_active.png)
 
     We are done. 
 
@@ -161,11 +161,11 @@ sudo gem install solargraph
 
 you might get an error
 
-<!--TODO-->
+<img src="image/err_zlib.png" alt="err_zlib" style="zoom: 67%;" />
 
 If we go to the designated directory and have a look at the log file, we will find this: 
 
-<!--TODO-->
+<img src="image/missing_zlib.png" alt="missing_zlib" style="zoom:50%;" />
 
 It is missing a dependency called `zlib` which is used to build an executable. 
 
@@ -257,7 +257,7 @@ If you are lucky enough and don't get any errors, jump directly to the [followin
 
 For most people (presumably), we get an error again, very unsurprisingly:
 
-<!--TODO-->
+<img src="image/err_rake.png" alt="err_rake" style="zoom:67%;" />
 
 So let's install `rake`
 
@@ -318,14 +318,12 @@ rdebug-ide --host 0.0.0.0 --port 1234 --dispatcher-port 26162 /path/to/the/file.
 
 Just click the button:
 
-<!--TODO-->
+<img src="image/start_dbg.png" alt="start_dbg" style="zoom: 67%;" />
 
 **IT IS WORKING!!!**
 
-<!--TODO-->
+<img src="image/ok.png" alt="ok" style="zoom:50%;" />
 
-This is the end of this tutorial. 
-
-> If you like it, star it. 
+This is the end of the tutorial. 
 
 Thank you, everybody. 
