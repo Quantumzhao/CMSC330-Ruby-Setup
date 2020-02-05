@@ -98,7 +98,7 @@ Make sure you install it on *WSL* (for *WSL* users)
 
 It should also download some other dependent extensions, including:
 
-<img src="another_ext.png" alt="another_ext" style="zoom:50%;" />
+<img src="image/another_ext.png" alt="another_ext" style="zoom:50%;" />
 
 > There might be a little line of text saying that *Extension ... is disabled ...* I don't know what it exactly means, but just ignore it. 
 
